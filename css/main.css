@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #0f0433, #3c0753);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px 25px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 9999px;
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+
+#todo-input {
+  flex: 1;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1rem;
+  outline: none;
+  background-color: transparent;
+}
+
+form button {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e84141;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+ul::-webkit-scrollbar {
+  width: 6px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.todo-item {
+  background-color: #f9f9f9;
+  padding: 15px 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.todo-item:hover {
+  background-color: #efefef;
+}
+
+.todo-item span {
+  flex: 1;
+  text-align: left;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.delete-btn:hover {
+  color: #e84141;
+}

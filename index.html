@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-container">
+        <div class="header">
+          <h2>Todo List</h2>
+        </div>
+        <form id="todo-form">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="Add new item..."
+            required
+          />
+          <button type="submit" id="sub">Submit</button>
+        </form>
+        <div class="todo-list" id="todo-list">
+          <ul id="todo-ul">
+            <li class="todo-item" id="todo-item">
+              <span>کارا تو بنویس و انجامشون بده</span>
+              <button class="delete-btn">x</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
